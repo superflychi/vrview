@@ -1,0 +1,104 @@
+---
+title: clusterfest.com 2017
+timezone: UTC
+collections:
+  attractions:
+    title: Attractions
+    output: true
+    permalink: "/attractions/:title/"
+  contact-topics:
+    title: Contact Topics
+    output: false
+  homepage-promo-slides:
+    title: Homepage Promo Slides
+    output: false
+  footer-nav:
+    title: Nav Footer
+    output: false
+  main-nav:
+    title: Nav Header
+    output: false
+  mobile-nav:
+    title: Nav Mobile
+    output: false
+  posts:
+    title: News Articles
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: news-detail
+    permalink: "/news/:title/"
+    url: "/news/:title/"
+    Article Image: ''
+    Article Thumbnail Image: ''
+    Author: ''
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+- scope:
+    path: ''
+    type: main-nav
+  values:
+    link: ''
+    Link Title: ''
+    CSS Class: ''
+    Sub Nav Items:
+    - title: ''
+      link: ''
+      Link Title: ''
+- scope:
+    path: ''
+    type: footer-nav
+  values:
+    link: ''
+    Link Title: ''
+    CSS Class: ''
+    Sub Nav Items:
+    - title: ''
+      link: ''
+      Link Title: ''
+- scope:
+    path: ''
+    type: mobile-nav
+  values:
+    link: ''
+    Link Title: ''
+    CSS Class: ''
+    Sub Nav Items:
+    - title: ''
+      link: ''
+      Link Title: ''
+- scope:
+    path: ''
+    type: homepage-promo-slides
+  values:
+    Slide Title: ''
+    Slide Date: ''
+    Slide Image: ''
+    Slide Link: ''
+    Slide Link Title: ''
+    CSS Class: ''
+    Youtube Embed ID: ''
+    Vid CSS Class: ''
+- scope:
+    path: ''
+    type: contact-topics
+  values:
+    Contact Topic Text: ''
+    column: ''
+url: https://www.clusterfest.com
+sitename: www.clusterfest.com
+suffix: Colossal Clusterfest 2017
+permalink: pretty
+exclude:
+- node_modules
+gems:
+- xxhash
